@@ -1,10 +1,10 @@
-function arrayToString(array, separador) {
-    if (!separador) {
-        separador = ",";
+function arrayToString(array, separator) {
+    if (!separator) {
+        separator = ",";
     }
     let result = "";
     for (let i = 0; i < array.length; i++) {
-        result += array[i] + separador;
+        result += array[i] + separator;
     }
     return result;
 }

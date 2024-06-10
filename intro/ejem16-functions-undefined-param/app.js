@@ -1,5 +1,5 @@
-function imprime(param){
+function printParam(param){
   console.log(param); //undefined    
 }
 
-imprime();
+printParam();

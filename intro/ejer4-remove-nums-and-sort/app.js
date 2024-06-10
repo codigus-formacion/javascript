@@ -1,12 +1,11 @@
-
-function quitaNumeros(numeros, quitaNumero) {
-    let sinNumeros = [];
-    for (let i = 0; i < numeros.length; i++) {
-        if (!quitaNumero(numeros[i])) {
-            sinNumeros.push(numeros[i]);
+function removeNums(nums, isNumToRemove) {
+    let noNums = [];
+    for (let i = 0; i < nums.length; i++) {
+        if (!isNumToRemove(nums[i])) {
+            noNums.push(nums[i]);
         }
     }
-    return sinNumeros;
+    return noNums;
 }
 
 function sortArrays(arrays) {
@@ -22,22 +21,22 @@ function sortArrays(arrays) {
     return arrays;
 }
 
-function quitaNumerosYOrdena(matriz, f) {
-    for (let i = 0; i < matriz.length; i++) {
-        matriz[i] = quitaNumeros(matriz[i], f);
+function removeNumsAndSort(matrix, fn) {
+    for (let i = 0; i < matrix.length; i++) {
+        matrix[i] = removeNums(matrix[i], fn);
     }
-    sortArrays(matriz);
-    return matriz;
+    sortArrays(matrix);
+    return matrix;
 }
 
-console.log(quitaNumerosYOrdena([
+console.log(removeNumsAndSort([
     [7, 0, 2, 1, 0, 1],
     [3, 0, 0, 2],
     [7, 9, 0],
     [6, 5, 0, 1, 0, 2, 0]], num => num > 2));
 
 
-console.log(quitaNumerosYOrdena([
+console.log(removeNumsAndSort([
     [7, 0, 2, 1, 0, 1],
     [3, 0, 0, 2],
     [7, 9, 0],

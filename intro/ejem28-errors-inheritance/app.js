@@ -5,7 +5,8 @@ class BaseError extends Error {
         this.name = name
         this.statusCode = statusCode
         this.isOperational = isOperational
-        Error.captureStackTrace(this)
+        // Node.js exclusive, uncomment if in a Node environment
+        //Error.captureStackTrace(this)
     }
 
     toString() {
