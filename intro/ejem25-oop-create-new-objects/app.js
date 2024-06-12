@@ -1,20 +1,20 @@
-function nuevoEmpleado(nombre, salario) {
+function newEmployee(name, salary) {
 
-    var empleado = {
-        nombre: nombre,
-        salario: salario,
+    let employee = {
+        name: name,
+        salary: salary,
         toString: function () {
-            return "N:" + this.nombre + " S:" + this.salario;
+            return "N:" + this.name + " S:" + this.salary;
         }
     };
 
-    return empleado;
+    return employee;
 }
 
-let empleado = nuevoEmpleado("Pepe",700);
+let employee = newEmployee("Pepe",700);
 
-//Devuelve 'Nombre:Pepe, Salario:700'
-console.log(empleado.toString());   
+//Returns 'N:Pepe, S:700'
+console.log(employee.toString());   
 
-//Devuelve 700
-console.log(empleado.salario);
+//Returns 700
+console.log(employee.salary);
