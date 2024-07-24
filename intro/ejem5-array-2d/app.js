@@ -3,7 +3,7 @@ let array2D = [
     [3, 4]
 ];
 
-console.log(numbers[0][0] + ',' +
-            numbers[0][1] + ',' +
-            numbers[1][0] + ',' +
-            numbers[1][1]);
+console.log(array2D[0][0] + ',' +
+            array2D[0][1] + ',' +
+            array2D[1][0] + ',' +
+            array2D[1][1]);
