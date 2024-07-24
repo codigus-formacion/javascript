@@ -44,4 +44,4 @@ let perimeterAvg = perimeterSum / rects.length;
 let areaAvg = areaSum / rects.length;
 
 console.log('Average perimeter: ', perimeterAvg);
-console.log('Average area: ', areaMedia);
+console.log('Average area: ', areaAvg);
