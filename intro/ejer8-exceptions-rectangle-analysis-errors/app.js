@@ -36,7 +36,7 @@ class Shape {
         throw new ShapeNotImplementedError('Method perimeter() not implemented');
     }
 
-    ratioAreaPerimetro() {
+    areaPerimeterRatio() {
         const area = this.area();
         const perimeter = this.perimeter();
         if (isNaN(area)) {

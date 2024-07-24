@@ -16,7 +16,7 @@ class Shape {
         console.error('Not implemented');
     }
 
-    ratioAreaPerimetro() {
+    areaPerimeterRatio() {
         return this.area() / this.perimeter();
     }
 
