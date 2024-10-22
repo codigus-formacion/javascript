@@ -11,7 +11,7 @@ function removeZeroes(nums) {
 
 function sortArrays(arrays) {
     for (let i = 0; i < arrays.length; i++) {
-        for (let j = 0; j < arrays.length-1; j++) {
+        for (let j = 0; j < arrays.length - i - 1; j++) {
             if (arrays[j].length > arrays[j + 1].length) {
                 let temp = arrays[j];
                 arrays[j] = arrays[j + 1];
