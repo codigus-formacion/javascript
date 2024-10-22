@@ -1,11 +1,11 @@
-let text = 'Hello'
+let text = 'Hello';
 
 function printParam() {
-    console.log(text)
+    console.log(text);
 }
 
 printParam(); // Hello
 
-text = 'Goodbye'
+text = 'Goodbye';
 
 printParam(); // Goodbye

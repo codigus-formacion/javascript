@@ -11,7 +11,7 @@ class Shape {
     }
 
     toString() {
-        return 'Shape(' + this.id + ')'
+        return 'Shape(' + this.id + ')';
     }
 }
 
@@ -24,11 +24,11 @@ class Rectangle extends Shape {
     }
 
     toString() {
-        return "Rectangle > " + super.toString()
+        return "Rectangle > " + super.toString();
     }
 
     static defaultRectangle() {
-        return new Rectangle("default", 0, 0, 100, 100)
+        return new Rectangle("default", 0, 0, 100, 100);
     }
 }
 
