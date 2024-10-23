@@ -42,14 +42,14 @@ class TripManager {
     }
 }
 
-let gestor = new GestorViajes();
+let manager = new TripManager();
 
-gestor.addTrip({ origin: 'Madrid', destination: 'Sevilla', duration: 2 });
-gestor.addTrip({ origin: 'Madrid', destination: 'Barcelona', duration: 3 });
-gestor.addTrip({ origin: 'Londres', destination: 'Barcelona', duration: 3 });
-gestor.addTrip({ origin: 'Barcelona', destination: 'Londres', duration: 3 });
-gestor.addTrip({ origin: 'New York', destination: 'Moscow', duration: 20 });
+manager.addTrip({ origin: 'Madrid', destination: 'Sevilla', duration: 2 });
+manager.addTrip({ origin: 'Madrid', destination: 'Barcelona', duration: 3 });
+manager.addTrip({ origin: 'Londres', destination: 'Barcelona', duration: 3 });
+manager.addTrip({ origin: 'Barcelona', destination: 'Londres', duration: 3 });
+manager.addTrip({ origin: 'New York', destination: 'Moscow', duration: 20 });
 
-console.log(gestor.getTripsByOrigin('Madrid'));
-console.log(gestor.getTripsByDestination('Barcelona'));
-console.log(gestor.getCities());
+console.log(manager.getTripsByOrigin('Madrid'));
+console.log(manager.getTripsByDestination('Barcelona'));
+console.log(manager.getCities());
