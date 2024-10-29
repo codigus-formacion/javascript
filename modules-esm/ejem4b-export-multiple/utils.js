@@ -9,6 +9,6 @@ export function log(msg) {
 
 export class Date {
     constructor(date) {
-        this.date = date
+        this.date = date;
     }
 }

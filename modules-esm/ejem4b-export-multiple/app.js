@@ -1,7 +1,7 @@
-import * as utils from './utils.js';
+import {obj, log, Date} from './utils.js';
 
-utils.log("message");
+log("message");
 
-console.log(utils.obj);
+console.log(obj);
 
-let date = new utils.Date('01-12-19');
+let date = new Date('01-12-19');

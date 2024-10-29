@@ -52,4 +52,5 @@ manager.addTrip({ origin: 'New York', destination: 'Moscow', duration: 20 });
 
 console.log(manager.getTripsByOrigin('Madrid'));
 console.log(manager.getTripsByDestination('Barcelona'));
+console.log(manager.getTrips());
 console.log(manager.getCities());
