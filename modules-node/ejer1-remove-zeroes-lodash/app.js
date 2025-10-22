@@ -1,13 +1,4 @@
-
-function removeZeroes(nums) {
-    let noZeroes = [];
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i] != 0) {
-            noZeroes.push(nums[i]);
-        }
-    }
-    return noZeroes;
-}
+import { without } from 'lodash';
 
 function sortArrays(arrays) {
     for (let i = 0; i < arrays.length; i++) {
@@ -24,7 +15,7 @@ function sortArrays(arrays) {
 
 function removeZeroesAndSort(matrix) {
     for (let i = 0; i < matrix.length; i++) {
-        matrix[i] = removeZeroes(matrix[i]);
+        matrix[i] = without(matrix[i], 0);
     }
     sortArrays(matrix);
     return matrix;

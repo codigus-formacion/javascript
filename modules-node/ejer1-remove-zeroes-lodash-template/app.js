@@ -1,4 +1,4 @@
-let removeZeroes = require('./remove-zeroes');
+import removeZeroes from './remove-zeroes.js';
 
 function sortArrays(arrays) {
     for (let i = 0; i < arrays.length; i++) {
